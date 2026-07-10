@@ -1,0 +1,6 @@
+{
+  "name": "Nashik 24x7",
+  "description": "A premium daily newspaper web app for Nashik, featuring breaking news, local developments, global sections, and a fully functional Administrative Editor Panel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
