@@ -19,10 +19,10 @@ async function startServer() {
     res.json({ status: 'ok', time: new Date().toISOString() });
   });
 
-  // Seeds for Autopilot News Simulator mimicking Lokmat, Sakal, and Loksatta
+  // Seeds for Autopilot News Simulator mimicking Nashik 24x7, Sakal, and Loksatta
   interface AutopilotSeed {
     marathiTitle: string;
-    marathiSource: 'lokmat.com' | 'esakal.com' | 'loksatta.com';
+    marathiSource: 'lokmat.com' | 'nashik24x7.com' | 'esakal.com' | 'loksatta.com';
     category: 'Panchavati' | 'Vineyards' | 'City Buzz' | 'Politics' | 'Business' | 'Lifestyle' | 'Heritage';
     englishTopic: string;
     suggestedAuthor: string;
@@ -38,7 +38,7 @@ async function startServer() {
     },
     {
       marathiTitle: "लासलगाव बाजारात कांद्याचे भाव भडकले; शेतकरी समाधानी, ग्राहक चिंतेत",
-      marathiSource: "lokmat.com",
+      marathiSource: "nashik24x7.com",
       category: "Politics",
       englishTopic: "Wholesale onion prices surge at Lasalgaon APMC, sparking state assembly discussions on crop subsidies and direct benefit transfers.",
       suggestedAuthor: "Manoj Salunkhe, Political Desk"
@@ -52,7 +52,7 @@ async function startServer() {
     },
     {
       marathiTitle: "सातपूर औद्योगिक वसाहतीत नवीन इलेक्ट्रिक वाहन निर्मिती प्रकल्पाची घोषणा",
-      marathiSource: "lokmat.com",
+      marathiSource: "nashik24x7.com",
       category: "Business",
       englishTopic: "A major new electric vehicle ancillary cluster and lithium assembly plant announced in Satpur MIDC, generating 4,500 local technical roles.",
       suggestedAuthor: "Samir Gujar, Industrial Hub Desk"
@@ -73,7 +73,7 @@ async function startServer() {
     },
     {
       marathiTitle: "नाशिक विमानतळावरून आंतरराष्ट्रीय कार्गो सेवा सुरू होणार; व्यापार क्षेत्रात आनंद",
-      marathiSource: "lokmat.com",
+      marathiSource: "nashik24x7.com",
       category: "Business",
       englishTopic: "Nashik Ozar Airport gets regulatory clearance for direct international agricultural cargo flights, opening rapid export routes to the Gulf.",
       suggestedAuthor: "Samir Gujar, Aviation & Trade"
@@ -94,7 +94,7 @@ async function startServer() {
     },
     {
       marathiTitle: "इगतपूरी घाटात धुक्याची चादर; पर्यटनासाठी विकेंडला हाऊसफुल्ल",
-      marathiSource: "lokmat.com",
+      marathiSource: "nashik24x7.com",
       category: "Lifestyle",
       englishTopic: "Monsoon mist wraps the scenic Igatpuri and Kasara ghats, leading to 100% occupancy across agro-tourism resorts and nature homestays.",
       suggestedAuthor: "Nisha Tambe, Travel & Lifestyle"
@@ -115,7 +115,7 @@ async function startServer() {
     },
     {
       marathiTitle: "नाशिकमध्ये नवीन आयटी पार्क उभारणीला गती; तरुणांना नोकरीच्या मोठ्या संधी",
-      marathiSource: "lokmat.com",
+      marathiSource: "nashik24x7.com",
       category: "Business",
       englishTopic: "Incentivized industrial zoning approved on Pathardi road to host mid-scale IT parks, hoping to prevent brain-drain to Mumbai and Pune.",
       suggestedAuthor: "Samir Gujar, Technology & Jobs"
@@ -136,7 +136,7 @@ async function startServer() {
     },
     {
       marathiTitle: "नाशिकच्या मातीतील कुस्तीगीर ठरला महाराष्ट्र केसरी; शहरात जल्लोश",
-      marathiSource: "lokmat.com",
+      marathiSource: "nashik24x7.com",
       category: "City Buzz",
       englishTopic: "Nashik-born young wrestler clinches the legendary Maharashtra Kesari title in Pune, sparking immense celebrations in Satpur and Panchavati.",
       suggestedAuthor: "Rahul Patil, Sports Desk"
@@ -164,7 +164,7 @@ async function startServer() {
     },
     {
       marathiTitle: "नाशिक सायकलिंग क्लबच्या तरुणांचे हिमालयात मोठे यश; नवीन विक्रम प्रस्थापित",
-      marathiSource: "lokmat.com",
+      marathiSource: "nashik24x7.com",
       category: "Lifestyle",
       englishTopic: "Cyclists from the prominent Nashik Cycling Club complete an extreme high-altitude Himalayan trail, creating an inspiring regional record.",
       suggestedAuthor: "Nisha Tambe, Health & Fitness"
@@ -188,7 +188,7 @@ async function startServer() {
         const ai = new GoogleGenAI({ apiKey });
 
         const prompt = `You are a professional journalist at "Nashik Times" editing a regional news feed.
-We are running an Autopilot News Agent that automatically processes daily local bulletins from popular regional Marathi websites like Lokmat, Esakal, and Loksatta.
+We are running an Autopilot News Agent that automatically processes daily local bulletins from popular regional Marathi websites like Nashik 24x7, Esakal, and Loksatta.
 
 Your job is to translate, summarize, and "make some changes" (i.e. rewrite into a beautiful, professional, objective English editorial article) and ALSO provide corresponding professional Marathi translation fields.
 

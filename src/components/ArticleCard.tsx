@@ -83,7 +83,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
             </span>
             <span>•</span>
             <span className="font-semibold text-zinc-700 dark:text-zinc-300">
-              {displayedSource === 'esakal.com' ? (isMarathi ? 'नाशिक २४x७ वृत्तसेवा' : 'Nashik 24x7 News Service') : displayedSource === 'lokmat.com' ? (isMarathi ? 'लोकमत न्यूज' : 'Lokmat News') : (isMarathi ? 'लोकसत्ता डेस्क' : 'Loksatta Desk')}
+              {displayedSource === 'esakal.com' ? (isMarathi ? 'नाशिक २४x७ वृत्तसेवा' : 'Nashik 24x7 News Service') : displayedSource === 'lokmat.com' ? (isMarathi ? 'नाशिक २४x७ न्यूज' : 'Nashik 24x7 News') : (isMarathi ? 'लोकसत्ता डेस्क' : 'Loksatta Desk')}
             </span>
             <span>•</span>
             <span>{article.date}</span>
@@ -230,7 +230,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
         </p>
 
         <div className="flex items-center justify-between text-[10px] text-zinc-500 mt-2 font-sans">
-          <span>{displayedSource === 'esakal.com' ? (isMarathi ? 'नाशिक २४x७ वृत्त' : 'Nashik 24x7 News') : (isMarathi ? 'लोकमत' : 'Lokmat')}</span>
+          <span>{displayedSource === 'esakal.com' ? (isMarathi ? 'नाशिक २४x७ वृत्त' : 'Nashik 24x7 News') : (isMarathi ? 'नाशिक २४x७' : 'Nashik 24x7')}</span>
           <div className="flex items-center gap-2">
             {/* Language toggle inside Card */}
             <button
@@ -292,7 +292,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
             </span>
             <span>•</span>
             <span className="font-semibold text-zinc-700 dark:text-zinc-300">
-              {displayedSource === 'esakal.com' ? (isMarathi ? 'नाशिक २४x७ वृत्तसेवा' : 'Nashik 24x7 News Service') : displayedSource === 'lokmat.com' ? (isMarathi ? 'लोकमत न्यूज' : 'Lokmat News') : (isMarathi ? 'लोकसत्ता डेस्क' : 'Loksatta Desk')}
+              {displayedSource === 'esakal.com' ? (isMarathi ? 'नाशिक २४x७ वृत्तसेवा' : 'Nashik 24x7 News Service') : displayedSource === 'lokmat.com' ? (isMarathi ? 'नाशिक २४x७ न्यूज' : 'Nashik 24x7 News') : (isMarathi ? 'लोकसत्ता डेस्क' : 'Loksatta Desk')}
             </span>
           </div>
 

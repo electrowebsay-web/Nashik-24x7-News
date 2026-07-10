@@ -35,7 +35,7 @@ export interface NewsArticle {
   marathiTitle?: string;
   marathiSubtitle?: string;
   marathiBody?: string;
-  marathiSource?: 'lokmat.com' | 'esakal.com' | 'loksatta.com';
+  marathiSource?: 'lokmat.com' | 'nashik24x7.com' | 'esakal.com' | 'loksatta.com';
   simulatedDayIndex?: number;
 }
 

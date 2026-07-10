@@ -962,7 +962,7 @@ Local division operators highlighted that projects of high densities require imm
                 2-Year Autonomous Press Agent Dashboard
               </h3>
               <p className="text-xs text-gray-600 leading-relaxed font-sans">
-                Automatically aggregate daily local news and trending bulletins from popular Marathi journals like <strong className="text-orange-900">lokmat.com</strong>, <strong className="text-orange-950">nashikdaily.com</strong>, and <strong className="text-red-950">loksatta.com</strong>. The autonomous parser translates, rewrites, and publishes a customized local edition every single day for 2 years.
+                Automatically aggregate daily local news and trending bulletins from popular Marathi journals like <strong className="text-orange-900">nashik24x7.com</strong>, <strong className="text-orange-950">nashikdaily.com</strong>, and <strong className="text-red-950">loksatta.com</strong>. The autonomous parser translates, rewrites, and publishes a customized local edition every single day for 2 years.
               </p>
             </div>
 
@@ -1163,7 +1163,7 @@ Local division operators highlighted that projects of high densities require imm
                   <div className="flex items-center justify-between p-2 bg-white rounded border border-gray-200">
                     <div className="flex items-center gap-2">
                       <span className="w-2.5 h-2.5 bg-orange-500 rounded-full"></span>
-                      <span>lokmat.com (Nashik Regional)</span>
+                      <span>nashik24x7.com (Nashik Regional)</span>
                     </div>
                     <span className="text-[10px] bg-green-50 border border-green-200 text-green-700 px-1.5 rounded uppercase font-bold">Connected</span>
                   </div>
